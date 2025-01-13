@@ -1,60 +1,44 @@
+/* Body styling */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f8ff;
-    text-align: center;
-}
-header {
-    background-color: #4682b4;
-    color: white;
-    padding: 1em 0;
-}
-.gallery {
+    overflow: auto;
+    height: 100vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
-}
-.gallery img {
-    margin: 10px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-}
-.gallery img:hover {
-    transform: scale(1.1);
-}
-.search-box {
-    margin: 20px 0;
-}
-.search-box input[type="text"] {
-    padding: 10px;
-    width: 60%;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-.search-box button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #4682b4;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.search-box button:hover {
-    background-color: #5a9bd5;
-}
-.top-image {
-    width: 100%; /* Makes the image span the entire width of the page */
-    height: auto; /* Maintains aspect ratio */
-    display: block; /* Removes any extra spacing around the image */
-    margin: 0 auto; /* Centers the image horizontally */
-    position: relative; /* Ensures it stays at the top of the flow */
+    align-items: center;
+    background-color: #f0f0f0;
 }
 
+/* Container styling */
+#container {
+    width: 800px;
+    height: 600px;
+    overflow: scroll;
+    border: 2px solid #ccc;
+    position: relative;
+    background: #fff;
+}
+
+/* Movable element styling */
+.movable {
+    width: 150px; /* Adjusted width */
+    height: 150px; /* Adjusted height */
+    position: absolute;
+    cursor: grab;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom images */
+#image1 {
+    top: 50px;
+    left: 50px;
+    background: url('images/image1.jpg') no-repeat center/cover;
+}
+
+#image2 {
+    top: 200px;
+    left: 200px;
+    background: url('images/image2.png') no-repeat center/cover;
+}
