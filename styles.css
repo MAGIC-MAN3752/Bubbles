@@ -50,3 +50,11 @@ header {
 .search-box button:hover {
     background-color: #5a9bd5;
 }
+.top-image {
+    width: 100%; /* Makes the image span the entire width of the page */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra spacing around the image */
+    margin: 0 auto; /* Centers the image horizontally */
+    position: relative; /* Ensures it stays at the top of the flow */
+}
+
